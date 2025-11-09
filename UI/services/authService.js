@@ -1,4 +1,6 @@
-const API_URL = "http://localhost:5000/api/auth"; // adjust if backend runs elsewhere
+//const API_URL = "http://localhost:5000/api/auth"; // adjust if backend runs elsewhere
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 // Register user
 export const register = async (userData) => {
