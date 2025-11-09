@@ -1,6 +1,7 @@
 import { getToken } from "./authService";
-const API_URL = "http://localhost:5000/api/tests";
+// const API_URL = "http://localhost:5000/api/tests";
 
+const API_URL = process.env.REACT_APP_API_URL;
 
 export const saveTestResult = async (resultData) => {
   const token = await getToken();
